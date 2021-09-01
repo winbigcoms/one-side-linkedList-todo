@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body > div {
+  height: 100vh;
+}
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignNon {
+  align-items: initial;
+}
+
+.width30 {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.wrapper > div {
+  height: fit-content;
+  width: 200px;
+  border: 1px solid #000;
+  position: relative;
+  min-height: 130px;
+}
+
+.wrapper > div:not(:last-child) {
+  margin-right: 30px;
+}
+
+.wrapper > div > h2 {
+  border-bottom: 1px solid #ccc;
+}
+/* .wrapper > div > button {
+  position: relative;
+} */
+
+h2 {
+  text-align: center;
+  padding: 15px;
+}
+.list li {
+  width: 200px;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.listItem {
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.itemTitle {
+  margin-bottom: 5px;
+}
+
+.addList {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+}
+
+.addList span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 50%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #000;
+}
+
+.addList span:first-child {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.makeList,
+.makeItem {
+  display: none;
+}
+
+.makeForm {
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 30%;
+  height: 11%;
+  transform: translate(120%, 348%);
+}
+.makeItem.makeForm {
+  height: 13%;
+  transform: translate(120%, 280%);
+}
+.makeForm > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.makeForm button {
+  padding: 0px 5px;
+}

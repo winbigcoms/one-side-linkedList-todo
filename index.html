@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="flexBox wrapper alignNon" id="listContainer"></div>
+    <button class="addList" id="addList">
+      <span></span>
+      <span></span>
+    </button>
+    <div class="modal" id="modal">
+      <div class="flexBox col makeItem makeForm" id="itemForm">
+        <h3>할일 리스트 추가하기</h3>
+        <label>
+          제목:
+          <input type="text" id="itemTitle" />
+        </label>
+        <label>
+          설명:
+          <input type="text" id="itemDesc" />
+        </label>
+        <button id="makeItem">추가하기</button>
+      </div>
+      <div class="flexBox col makeList makeForm" id="listForm">
+        <h3>할일 리스트 추가하기</h3>
+        <label>
+          타이틀:
+          <input type="text" id="title" />
+        </label>
+        <button id="makeList">추가하기</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
